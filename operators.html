@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <script>
+      var a = 17;
+      var b = 5;
+      var c = a % b;
+      console.log(c); //2
+
+      var x = 1;
+      x++;
+      console.log(x); //2
+      x += 1;
+      console.log(x); //3
+      x = x + 1;
+      console.log(x); //4
+
+      var y = 17;
+      y %= 2; //y = y % 2 -> y=17%2=1
+      console.log(y); //1
+
+      var strA = "Hello ";
+      var strB = "C06";
+      var strAB = strA + strB;
+      console.log(strAB); //"Hello C06"
+
+      var strA = "Hello ";
+      var strAB = strA + "C06-C3";
+      console.log(strAB); //"Hello C06-C3"
+
+      var strB = "C06-C3";
+      var strAB = "Hello " + strB;
+      console.log(strAB); //"Hello C06-C3"
+
+      var numberC = 1;
+      var numberD = "1";
+      var numberCD = numberC + numberD;
+      console.log(numberCD); //"11"
+      console.log(typeof numberCD); //string
+
+      //Comparation
+      var e = 1;
+      var d = "1";
+      console.log(e == d);//true
+      console.log(e === d);//false
+
+      //Logical expression
+      var a = 2;
+      var b = 3;
+      var c = (a > b) || (a < 3);
+      console.log(c);//true
+      var d = (a > b) && (a < 3);
+      console.log(d);//false
+      var d2 = (a < b) && (a < 5);
+      console.log(d2);//true
+      console.log(!d2);//false
+    </script>
+  </body>
+</html>
